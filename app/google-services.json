@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "948674569620",
+    "firebase_url": "https://laundrywale-4aef6-default-rtdb.firebaseio.com",
+    "project_id": "laundrywale-4aef6",
+    "storage_bucket": "laundrywale-4aef6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948674569620:android:bffbefa5507a63a16ddb81",
+        "android_client_info": {
+          "package_name": "team.laundrywale.androidcustomerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948674569620-27s2oplbnuh2ddnev44g7rqq60kkpqv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxRN8g1dIbGVr3x0AAtARuejRtaBKIp2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948674569620-27s2oplbnuh2ddnev44g7rqq60kkpqv2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
