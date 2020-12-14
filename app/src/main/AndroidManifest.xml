@@ -54,7 +54,7 @@
             android:value="@string/google_maps_key" />
 
         <activity android:name="team.laundrywale.androidcustomerapp.UserRequestActivity" />
-        <activity android:name="team.laundrywale.androidcustomerapp.FAQ2Activity" />
+
 
         <service android:name="team.laundrywale.androidcustomerapp.Service.MyFirebaseService">
             <intent-filter>

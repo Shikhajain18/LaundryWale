@@ -37,7 +37,7 @@ public class OrderActivity extends AppCompatActivity {
             displayMonth = bundle.getString("display_month");
             displayYear = bundle.getInt("display_year");;
             totalAmount = bundle.getInt("total_amount");
-            orderNumberToShow = "456";
+            orderNumberToShow = "129";
 
             orderNo.setText("Order No. : " + orderNumberToShow);
             eta.setText("Delivery ETA  : " + "0"+displayHour+":"+displayMinute+" "+displayDayOfMonth+" "+displayMonth+" "+displayYear);
