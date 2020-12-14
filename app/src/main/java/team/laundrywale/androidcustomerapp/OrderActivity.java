@@ -41,12 +41,12 @@ public class OrderActivity extends AppCompatActivity {
 
             orderNo.setText("Order No. : " + orderNumberToShow);
             eta.setText("Delivery ETA  : " + "0"+displayHour+":"+displayMinute+" "+displayDayOfMonth+" "+displayMonth+" "+displayYear);
-            total.setText("Total Amount: rs."+totalAmount);
+            total.setText("Total Amount: Rs."+totalAmount);
 
         }else{
             orderNo.setText("Order No. : " + orderNumberToShow);
             eta.setText("Delivery ETA  : " + "0"+displayHour+":"+displayMinute+" "+displayDayOfMonth+" "+displayMonth+" "+displayYear);
-            total.setText("Total Amount: rs."+totalAmount);
+            total.setText("Total Amount: Rs."+totalAmount);
         }
 
     }

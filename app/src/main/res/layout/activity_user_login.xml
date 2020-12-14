@@ -14,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
-        android:src="@drawable/uporer_chobi" />
+        android:src="@drawable/laundrylogo" />
 
     <TextView
         android:id="@+id/user_status"
