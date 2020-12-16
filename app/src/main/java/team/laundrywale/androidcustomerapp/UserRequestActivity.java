@@ -11,6 +11,7 @@ import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -19,12 +20,13 @@ public class UserRequestActivity extends AppCompatActivity implements View.OnCli
     private Button btn;
     private CheckBox laundry;
     private CheckBox iron;
-    private int displayHour;
-    private int displayMinute;
-    private int displayDayOfMonth;
+    private int tempNo = 0;
+    private int displayHour = 0;
+    private int displayMinute = 0;
+    private int displayDayOfMonth = 0;
     private String displayMonth;
     private String numOfClothes;
-    private int displayYear;
+    private int displayYear = 0;
     boolean laundryToBe;
     boolean ironToBe;
     EditText editText;
@@ -66,7 +68,16 @@ public class UserRequestActivity extends AppCompatActivity implements View.OnCli
                 numOfClothes = editText.getText().toString();
                 laundryToBe = laundry.isChecked();
                 ironToBe = iron.isChecked();
+                if (!numOfClothes.equals("")){
+                    tempNo = Integer.parseInt(numOfClothes);
+                }
 
+
+                if(tempNo == 0 || displayDayOfMonth == 0 || displayHour == 0 || displayMinute == 0 ||displayYear == 0 ){
+
+                    Toast.makeText(getApplicationContext(),"Please fill all the details",Toast.LENGTH_SHORT).show();
+                }
+                else{
                     int total = calculatePrice(numOfClothes);
                     Intent intent = new Intent(UserRequestActivity.this, OrderActivity.class);
                     Bundle bundle = new Bundle();
@@ -78,6 +89,9 @@ public class UserRequestActivity extends AppCompatActivity implements View.OnCli
                     bundle.putString("display_month", displayMonth);
                     intent.putExtras(bundle);
                     startActivity(intent);
+
+                }
+
 
 //                System.out.println(displayHour + " " + displayMinute + " " + displayDayOfMonth + " " + displayMonth + " " + displayYear);
 
