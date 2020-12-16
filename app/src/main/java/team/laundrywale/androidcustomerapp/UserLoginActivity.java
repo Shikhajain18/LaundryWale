@@ -34,7 +34,7 @@ public class UserLoginActivity extends AppCompatActivity {
     private EditText userEmail, userPass;
     private TextView needNewAccount;
     private ProgressDialog loadingBar;
-    private Button googleSignInButton;
+//    private Button googleSignInButton;
 
 
     private FirebaseAuth mAuth;
@@ -55,7 +55,7 @@ public class UserLoginActivity extends AppCompatActivity {
         userPass = (EditText) findViewById(R.id.user_login_pass);
         needNewAccount = (TextView) findViewById(R.id.user_login_edit_text);
         loadingBar = new ProgressDialog(this);
-        googleSignInButton = (Button) findViewById(R.id.user_login_google_button);
+//        googleSignInButton = (Button) findViewById(R.id.user_login_google_button);
 
         needNewAccount.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,20 +71,20 @@ public class UserLoginActivity extends AppCompatActivity {
             }
         });
 
-        // Configure Google Sign In
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
-                .requestEmail()
-                .build();
+        // Configure Google Sign In for future releases
+//        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+//                .requestIdToken(getString(R.string.default_web_client_id))
+//                .requestEmail()
+//                .build();
 
-        mGoogleSignInClient = GoogleSignIn.getClient(this,gso);
+//        mGoogleSignInClient = GoogleSignIn.getClient(this,gso);
 
-        googleSignInButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signIn();
-            }
-        });
+//        googleSignInButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                signIn();
+//            }
+//        });
 
     }
 
